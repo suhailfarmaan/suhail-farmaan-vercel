@@ -12,7 +12,7 @@ This portfolio is built with **Next.js** and a library called [Nextra](https://n
 
 The Exercise
 
-1. From the list, rank your 5 most favourite and 5 least favourite support tasks. Provide a
+SECTION 1. From the list, rank your 5 most favourite and 5 least favourite support tasks. Provide a
 brief explanation for each.
 
 Least Favorites 
@@ -40,6 +40,189 @@ Most Favorites
 5. Help train and onboard new support teammates
 
 
+SECTION 2: What do you want to learn or do more of at work?
+
+suhailFarmaan: I engage with customers and fancy more of troubleshooting and problem solving level skills leveraging technology and logic to find solutions in realtime.
+
+SECTION 3: Describe how you solved a challenge or technical issue that you faced in a previous role
+(preferably in a previous support role). How did you determine that your solution was
+successful?
+
+suhailFarmaan: The situation has been described as follows. 
+
+    Issue: CORS Error on a REACT build
+
+    Troubleshooting: 
+
+    I initially collected the information from the client regarding the error that they are experiencing and some screenshots for a better understanding 
+    of the issue. 
+
+    Reviewed the configuration of the server where the react build is being served to verify the allowed origins, methods, and headers configured in the CORS policy.
+
+    Using Developer tools,  inspected network requests made by the React application to identify any CORS-related errors or preflight requests that were being blocked by the server due to CORS policies.
+
+    Based on my analysis, I adjusted the CORS policies on the server to explicitly allow the necessary origins, methods, and headers required by the React application. This involved updating server-side configuration files or making changes in the server code to implement the required CORS headers.
+
+
+    Validation: 
+
+    After making changes to the CORS policies, I conducted extensive testing of the React application to verify that the CORS errors were resolved. This included testing various features and functionalities that previously triggered CORS issues, such as API requests to external domains.
+    I also monitored the application closely to ensure that the changes did not introduce any new issues or regressions. I also remained vigilant for any reports of continued CORS errors from customers, promptly addressing any remaining issues that arose.
+
+
+Future Proofing: 
+
+Finally, I documented the steps taken to diagnose and resolve the CORS errors, along with any relevant configuration changes made on the server side. This documentation served as a reference for future troubleshooting efforts and was shared with the team to enhance collective knowledge.
+
+
+SECTION 4: When would you choose to use Edge Functions, Serverless Functions, or Edge
+Middleware with Vercel?
+
+suhailFarmaan: Here's how I would decide on Edge Functions, Serverless Functions or Edge Middleware with Vercel.
+------
+Edge Functions - Basically Edge functions can support light weight tasks with logic that needs to be implemented on the edge, Edge Functions are also nearer to the end user to improve efficiency and performance
+The Edge Functions also improve latency and redcuses the load on the server. Also as far as I am aware based on the documentations I have gone through of vercel, This imrpoves implementing the right logic directly near the User's location with the use of Vercel's Global Edge Network. 
+
+Now to answer when we can use this, probably when we are trying to implement a light weight task of a function that may unclude implementing URL redirects, Customer headers and similar. 
+
+------
+Serverless - We can use serverless when there's a requirement of Dynamic server side logic processing end user requests, interacting with databases and external services that fit the infrastructure resulting in efficient scalability based on user demand and cost effective.
+
+I would use the when one or more of Api Requests, Form Submissions, Data Validations are involved. 
+
+------
+Edge Middleware - Edge Middleware can be used for better optimization techniques typically used to intercept and modifying HTTP requests and responses at the edge. Edge Middleware can also improve performance and development efficiency by allowing you to apply common HTTP-related tasks at the edge without needing to deploy separate functions
+
+Edge Middleware is better to be used for security headers, compressing responses, rewriting URLs, or implementing A/B testing.
+
+Conclusion: This process entirely depends on client's requirements and the level of control they might be looking for as well as the potential scalability of the project. By Evaluating the requirements with the concepts of each of the above functions it becomes easier to determine when and what needs to be used. 
+
+SECTION 5: Imagine a customer writes in requesting help with a build issue on a framework or
+technology that you've not seen before. How would you begin troubleshooting this and
+what questions would you ask the customer to understand the situation better?
+
+suhailFarmaan: First things first, It is very important to probe more questions to understand the situation better before jumping onto finding a solution. Asking relative questions and finding help online with developer documents of the framework might help us funnel our troubleshooting levels to bring out a suitable solutions. 
+Although most of the frameworks might share the same concepts but they are technically involved with a differentiation in methodologies. If I am in this situation, I would first gather all the information possible followed by a thorough research and in some cases might also try replicating a similar issue from our sandboxes or ask a coworker / senior if they have faced a similar issue if yes then fastrack the process by validating the similarities. 
+Once we have an understanding we can proceed with the troublshooting client side and our side as well to deliver a validated solution. 
+
+Last but not the least, documenting the solution and the issue is a vital part to imrpove our resolution time for future needs. 
+
+SECTION 6: The customer from question 5 replies to your response with the below:
+
+“I’m so frustrated. I’ve been trying to make this work for hours and I just can’t figure it
+out. It must be a platform issue so just fix it for me instead of asking me questions.”
+Please write a follow-up reply to the customer.
+
+suhailFarmaan: Frustrated customers are in the position for a reason, even if its something silly. Providing the solution is not just a great service but also to educate them about it to avoid reoccurences.
+
+The reply to this frustrated customer would be as follows, 
+
+
+Certainly! Here's a follow-up reply to the frustrated customer:
+
+    Dear Shakira,
+
+    I completely understand your frustration and want to assure you that we're here to help resolve your issue as quickly as possible.
+
+    While I acknowledge the time and effort you've already invested in troubleshooting the problem, it's important for us to gather more information to accurately diagnose and address the root cause. This will help ensure that we provide a lasting solution that prevents similar issues in the future.
+
+    To expedite the process, could you please provide additional details about the specific error messages or unexpected behaviors you're encountering? Any screenshots or error logs you can share would be immensely helpful in pinpointing the issue.
+
+    Rest assured, once we have a clearer understanding of the problem, we'll work diligently to resolve it promptly and effectively. Your satisfaction is our top priority, and we're committed to delivering a positive outcome.
+
+    Thank you for your patience and cooperation. We look forward to assisting you further and resolving this issue to your satisfaction.
+
+    Best regards,
+    Suhail suhailFarmaan
+    Senior Customer Success Engineer 
+    Team Vercel
+
+SECTION 7: A customer writes in to the Helpdesk asking "How do I do a redirect from the /blog
+path to https://example.com?" Please write a reply to the customer. Feel free to add any
+information about your decision making process after the reply.
+
+suhailFarmaan: Considering the requirements are provided I will test the outcome of the solution I am going to provide first in my own test enviroment and then share it with the customere, Sometimes human errors are not caused in the complex bugs but in simple syntax hence its better to test before deliver. 
+
+Dear Shakira,
+
+Thank you for reaching out to us with your question. I have a solution that's tested and resulted positive for your request.
+
+To set up a redirect from the /blog path to https://example.com, One of the simplest ways to achieve this redirection is by configuring it directly in your web server or hosting provider's cPanel. If you have access to your server configuration files, you can add a redirect rule like the following:
+
+Copy the below snippet and add it to your relevant destiantion. (Feel free to customise as per your requirements if any )
+
+"Redirect 301 /blog https://example.com"
+
+alternatively, if you're using a modern web framework or content management system (CMS) like WordPress, there are often plugins or built-in features that allow you to set up redirects easily through the admin's user interface.
+
+If you're unsure about how to proceed or need assistance with implementing the redirect, please provide us with more details about your website setup and hosting environment. We will be happy to guide you through the process and ensure that the redirection is set up correctly.
+
+We're here to help you every step of the way.
+
+Best regards,
+Suhail Farmaan
+Senior Customer Success Engineer
+Team Vercel
+
+
+SECTION 8: A customer is creating a site and would like their project not to be indexed by search
+engines. Please write a reply to the customer. Feel free to add any information about
+your decision making process after the reply. 
+
+suhailFarmaan: Based on my past experience, Solutions might not be something the client might be looking for, may be the client is just looking to explore options, or might not be aware of the impact on several other things that are in consideration. The best way I would prefer to answer
+to this client would be with intending the solution along with clarification and other options. 
+
+Hello Shakira,
+
+Thank you for reaching out to us. I hope you're well
+
+To prevent your website from being indexed by search engines, there are several considerable methods to control access to your site's content.
+
+One commonly used method is to add a robots.txt file to your website's root directory. This file instructs search engine crawlers on which pages or directories should not be indexed. 
+
+Here's an example of how you can create a basic robots.txt file:
+
+{code start}
+User-agent: *
+Disallow: /
+{code end}
+
+This directive tells all user-agents such as search engine crawlers to not index any pages on your site. {comment}
+
+Additionally, you can use HTML meta tags to specify noindex directives on specific pages. 
+
+For example, you can add the following meta tag within the <head> section of your webpage to prevent indexing:
+
+{code start}
+<meta name="robots" content="noindex, nofollow">
+{code end}
+This tag tells search engine crawlers not to index the current page and not to follow any links from that page. {comment}
+
+It's important to note that while these methods can help prevent indexing, they are not foolproof. Determined search engines may still index your site despite your efforts. Therefore, it's essential to regularly monitor your site's indexing status using tools like Google Search Console and Bing Webmaster Tools, and take additional measures if necessary.
+
+If you need further assistance or have any questions about implementing these techniques, please don't hesitate to reach out to us. We're here to help.
+
+
+SECTION 9: What do you think is one of the most common problems which customers ask Vercel for
+help with? How would you help customers to overcome common problems, short-term
+and long-term?
+
+suhailFarmaan: I personally had a few experiences with Vercel in the past and collectively reading on your Forum I found that however here's how I would handle the scenario as follows. 
+
+- Supporting the customer technically and with empathy to provide a inclusive experience.
+- Collaborate directly on live session when required to reduce replication time. 
+- Document the process with complete RCA in case there's something to be added or updated on our Developer Support Documents for future proofing. 
+- Setting up proactive alerts and effective monitoring to ensure the solution provided delivers a positive outcome. 
+- Validate with the client/customer to ensure the solution was in fact resulted with a positive experience. 
+
+SECTION 10: How could we improve or alter this familiarisation exercise?
+
+I have been through several different processes during the interview but this has been the first one that stands providing enough space to test real life situations and getting the ideation of the candidate to see if we fit the criteria. (satisfied with the experience)
+
+Best regards,
+Suhail Farmaan
+Senior Customer Success Engineer
+Team Vercel
 
 
 [**Deploy your own**](https://vercel.com/new/clone?demo-title=Portfolio+Starter+Kit&demo-description=Easily+create+a+portfolio+with+Next.js+and+Markdown.&demo-url=https%3A%2F%2Fdemo.vercel.blog%2F&demo-image=%2F%2Fimages.ctfassets.net%2Fe5382hct74si%2F2aC4eHLrOKmT4fnLfoNGK2%2F14b1e6bbe598ec023ffe85001d31e634%2FCleanShot_2022-04-11_at_23.12.01.png&project-name=Portfolio+Starter+Kit&repository-name=portfolio-starter-kit&repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fnextjs-portfolio-starter&from=templates&skippable-integrations=1&teamCreateStatus=hidden) in a few minutes.
